@@ -8,11 +8,12 @@ line7=763524189
 line8=928671354
 line9=154938672
 
-def ctrlRow(line):
-    for ch in line.sort():
-        if ch.isnum() in range(1,10):
-            return True
+counter=1
+def ctrl(line):   #per controllare i valori
+    for ch in line[]:
+        if ch in range(1,10):
+            ch += counter
         else:
-            print('reinserisci solo numeri')
-
-for 
+            print('non hai inseriti 9 cifre')
+for r in range (9):
+    ctrl(line)
