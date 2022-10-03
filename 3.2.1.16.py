@@ -16,14 +16,12 @@ class Queue:
             raise QueueError
 
 class SuperQueue(Queue):
-    def __init__(self):
-        if len(Queue) is 0 : 
+    ndef isempty(self):
+        if len(self.queue) == 0 :
             return True
         else:
             return False
-    #
-    # Write new code here.
-    #
+        
 
 
 que = SuperQueue()
