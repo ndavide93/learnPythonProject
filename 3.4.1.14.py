@@ -1,5 +1,5 @@
 import math
-from tkinter import Y
+
 class Point:
     def __init__(self, x=0.0, y=0.0):
         self.__ax=x
@@ -12,12 +12,11 @@ class Point:
         return self.__ay
 
     def distance_from_xy(self, x, y):
-       return self.distanzaDaO=(((self.__ax - x))**2+(self.__ay-y)**2)**0.5
+       return (((self.__ax - x))**2+(self.__ay-y)**2)**0.5
        
-
     def distance_from_point(self, point):
-        distanzaDaPoint=math.hypot(getx(point)-getx(self),gety(point)-gety(self))
-        return distanzaDaPoint
+        return self.distance_from_xy(point.getx(),point.gety())
+        
         #self.distanzaDaPoint=((getx(point)-getx(self))**2+(gety(point)- gety(self))**2)**0.5
 
 point1 = Point(0, 0)
