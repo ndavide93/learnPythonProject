@@ -3,15 +3,15 @@ from datetime import datetime
 import os
 timestamp=datetime.now()
 
-def find(path,dir):
+def find(percorso,nomefile):
     try:
-        for cartella in os.listdir(path):
+        for cartella in os.listdir(percorso):
             if cartella == dir:
-                print(os.path.dirname(os.path.join(path,cartella,dir)))
+                print(os.path.dirname(os.path.join(percorso,cartella,dir)))
                 continue
             else:
-                if os.path.isdir(os.path.join(path,cartella)):
-                    find(os.path.join(path,cartella),dir)
+                if os.path.isdir(os.path.join(percorso,cartella)):
+                    find(os.path.join(percorso,cartella),dir)
             
     except:
         print('non trovato')
@@ -30,5 +30,4 @@ repository.close()
 
 os.chdir('C:/Users/bad-b/Desktop/python/python_work/4.4.8')
 #https://docs.python.org/3/library/os.path.html
-
-find(path="./tree",dir="python") 
+ 
