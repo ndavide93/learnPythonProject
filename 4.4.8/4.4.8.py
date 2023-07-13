@@ -10,7 +10,6 @@ def find(path,dir):
             else:
                 if os.path.isdir(os.path.join(path,cartella)):
                     find(os.path.join(path,cartella),dir)
-            
     except:
         print('non trovato')
 find(path="./Python310",dir="docx2txt") 
