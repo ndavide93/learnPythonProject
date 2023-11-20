@@ -1,5 +1,5 @@
 import os
-os.chdir('C:/Users/bad-b/Desktop/python/python_work/4.4.8')
+os.chdir('C:/Users/dnordoni/AppData/Local/Programs/Python')
 #https://docs.python.org/3/library/os.path.html
 def find(path,dir):
     try:
@@ -12,4 +12,4 @@ def find(path,dir):
                     find(os.path.join(path,cartella),dir)
     except:
         print('non trovato')
-find(path="./tree",dir="python") 
+find(path="./Python310",dir="docx2txt") 
